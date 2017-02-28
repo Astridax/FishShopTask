@@ -1,0 +1,142 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div {
+  display: flex;
+  box-sizing: border-box;
+}
+
+img {
+  max-width:100px;
+  max-height:100px;
+  /*flex-basis:100px;*/
+  width: 100%;
+  height: auto;
+}
+
+
+.listFish {
+  border-width: 2px;
+  border-style: solid;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction:column;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  max-height: 200px;
+  color: #FFFFFF
+}
+
+.listFish:nth-child(odd){
+  background-color: #ABDF75;
+}
+
+.listFish:nth-child(even){
+  background-color: #C5D6D8;
+}
+
+.uiButton {
+  flex: 1 1 auto;
+  height: 50px;
+  max-width:50%;
+  border-style: solid;
+  border-width:5px;
+  background-color: #ABDF75;
+  border-color: #337357;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF
+}
+
+.containerHeader {
+  flex-grow: 1;
+  min-width:50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.tank {
+  border-style: solid;
+  border-width: 4px;
+  border-color: #313E50;
+  flex: 1 1 auto;
+  max-width: 50%;
+}
+
+.rightBorder{
+    border-width: 0px 2px 0px 0px;
+    border-style: dashed;
+    border-color: #313E50;
+}
+
+.leftBorder{
+    border-width: 0px 0px 0px 2px;
+    border-style: dashed;
+    border-color: #313E50;
+}
+
+#container {
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100px;
+}
+
+#shop {
+  min-height: 400px;
+}
+
+#ui {
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*min-height: 100px;*/
+  padding-bottom: 10px;
+  width: 100%
+}
+
+#shopTank {
+  /*width: 50%;*/
+  flex-wrap: wrap;
+}
+
+#customerTank {
+  /*width: 50%;*/
+  flex-wrap: wrap;
+}
+
+.overlay {
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0, 0.6);
+    overflow-x: hidden; 
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+}
+
+#notificationDisplay {
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+  min-height: 40%;
+  max-height: 60%;
+  max-width: 40%;
+  background-color: rgb(255,255,255);
+}
+
+#app {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

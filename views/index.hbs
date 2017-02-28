@@ -1,0 +1,38 @@
+<div id="app">
+<h1>{{title}}</h1>
+<p>Welcome to the {{title}}</p>
+
+<div id="ui">
+    <div id="reset" class="uiButton">
+        <h1>Reset</h1>
+    </div>
+    <div id="checkout" class="uiButton">
+        <h1>Checkout</h1>
+    </div>
+</div>
+
+<div id="container">
+    <div id="header">
+        <div class="containerHeader rightBorder"><h2>In Shop</h2></div>
+        <div class="containerHeader leftBorder"><h2>In Fish Tank</h2></div>
+    </div>
+    <div id="shop">
+        <div id="shopTank" class="tank">
+            {{#each fishInShop}}
+                <div class="listFish" data-id="{{id}}">
+                    <img class="listImage" src="/images/fish/{{imageName}}">
+                    <p>{{name}}</p>
+                </div>
+            {{/each}}
+        </div>
+        <div id="customerTank" class="tank"></div>
+    <div>
+</div>
+
+<div class="overlay">
+    <div id="notificationDisplay">
+        <h1>Notification</h1>
+        <p class="message">Placeholder Message</p>
+    </div>
+</div>
+</div>
